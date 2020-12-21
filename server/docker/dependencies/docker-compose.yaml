@@ -39,11 +39,27 @@ services:
       - insult-me
     image: "docker.elastic.co/kibana/kibana:6.8.0"
   redis:
+    container_name: redis
     ports:
       - "6379:6379"
     networks:
       - insult-me
     image: "redis:alpine"
+  mongodb:
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - insult-me
+    image: mongo:latest
+
+volumes:
+  mongodb_data:
 
 networks:
   insult-me:

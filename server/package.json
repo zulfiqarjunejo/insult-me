@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/mongodb": "^3.6.3",
     "async-redis": "^1.1.7",
     "axios": "^0.21.0",
     "body-parser": "^1.19.0",
@@ -19,6 +20,7 @@
     "express": "^4.17.1",
     "jaeger-client": "^3.18.1",
     "limitedQueue": "^0.1.4",
+    "mongodb": "^3.6.3",
     "opentracing": "^0.14.5",
     "redis": "^3.0.2",
     "uuid": "^8.3.2"
