@@ -6,3 +6,8 @@ A simple application consisting of two REST endpoints to demonstrate distributed
 
 - MongoDB
 - Jaeger
+
+## Todos:
+
+- Create a frontend and add tracing in it.
+- Read about patterns to make the code cleaner.
